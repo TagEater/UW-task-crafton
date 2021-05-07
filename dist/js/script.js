@@ -42,6 +42,7 @@ showSlides(slideId);
 
 window.onscroll = () => navbarHandler();
 
+// check navbar position, when it's offset then add sticky class
 const navbarHandler = () => {
 	const navbar = document.getElementById("header");
 	let navbarOffset = navbar.offsetTop;
