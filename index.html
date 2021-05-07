@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta author content="Crafton"/>
-    <link rel="stylesheet" href="/dist/css/style.css"/>
-    <link rel="stylesheet" href="/dist/scss/style.css"/>
-    <title>Uniwersytet Warszawski - Task for Crafton</title>
+    <meta author content="Crafton" />
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <!-- <link rel="stylesheet" href="/dist/scss/style.css" /> -->
+    <title>Task for Crafton</title>
   </head>
   <body>
     <!-- Start of navbar section -->
-    <header class="header">
+    <header id="header" class="header">
       <nav class="navbar">
-		<img src="logo.png" alt="Logo"/>
+        <img src="logo.png" alt="Logo" />
         <ul class="navbar-menu">
           <li class="navbar-menu__item">I stopnia</li>
           <li class="navbar-menu__item">II stopnia</li>
@@ -26,31 +26,137 @@
     <!-- End of Navbar section -->
 
     <!-- Slider Start -->
-    <div class="slider"></div>
+    <div class="slider">
+      <div class="slider-slide">
+        <img src="/dist/images/img.1.jpg" alt="img-1">
+        <div class="absolute-header">
+          <h1 class="slider-slide__header">Będziesz się uczyć z ciekawością.</h1>
+          <h1 class="slider-slide__header-color">Obiecujemy.</h1>
+          <div class="slider-slide__buttons">
+            <button class="slider-slide__buttons-button">ZOBACZ WIĘCEJ</button>
+            <button class="slider-slide__buttons-button transparent">UMÓW SIĘ Z ANIOŁEM</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <img src="/dist/images/img.1.jpg" alt="img-1">
+        <div class="absolute-header">
+          <h1 class="slider-slide__header">Będziesz się uczyć z ciekawością.</h1>
+          <h1 class="slider-slide__header-color">Obiecujemy.</h1>
+          <div class="slider-slide__buttons">
+            <button class="slider-slide__buttons-button">ZOBACZ WIĘCEJ</button>
+            <button class="slider-slide__buttons-button transparent">UMÓW SIĘ Z ANIOŁEM</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <img src="/dist/images/img.1.jpg" alt="img-1">
+        <div class="absolute-header">
+          <h1 class="slider-slide__header">Będziesz się uczyć z ciekawością.</h1>
+          <h1 class="slider-slide__header-color">Obiecujemy.</h1>
+          <div class="slider-slide__buttons">
+            <button class="slider-slide__buttons-button">ZOBACZ WIĘCEJ</button>
+            <button class="slider-slide__buttons-button transparent">UMÓW SIĘ Z ANIOŁEM</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <img src="/dist/images/img.1.jpg" alt="img-1">
+        <div class="absolute-header">
+          <h1 class="slider-slide__header">Będziesz się uczyć z ciekawością.</h1>
+          <h1 class="slider-slide__header-color">Obiecujemy.</h1>
+          <div class="slider-slide__buttons">
+            <button class="slider-slide__buttons-button">ZOBACZ WIĘCEJ</button>
+            <button class="slider-slide__buttons-button transparent">UMÓW SIĘ Z ANIOŁEM</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-arrows">
+        <span class="slider-arrows__arow" onclick="changeSlide(-1)">&#8592;</span>
+        <span class="slider-arrows__arow" onclick="changeSlide(1)">&#8594;</span>
+      </div>
+      <div class="dots-menu">
+        <span class="dots-menu__item" onclick="currentSlide(0)"></span>
+        <span class="dots-menu__item" onclick="currentSlide(1)"></span>
+        <span class="dots-menu__item" onclick="currentSlide(2)"></span>
+        <span class="dots-menu__item" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
     <!-- Slider End-->
 
     <!-- Main Section Start-->
     <main class="main">
       <div class="main-container">
-		  <div class="main-container__text"></div>
-		  <div class="main-container__image"></div>
-	  </div>
+        <div class="main-container__text">
+          <h1 class="main-container__text-header">Dla Kogo?</h1>
+          <p class="main-container__text-paragraph">
+            Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne,którzy</br>
+			      chcą uzyskać merytoryczne i metodyczne przygotowanie do nauczania kolejnego </br>
+            przedmiotu - Geografii.
+          </p>
+		  <p class="main-container__text-paragraph">
+			  Studia adresowane są do osób legitymujących sie wyższym wyszktałceniem na</br>
+			  poziomie studiów licencjackim o specjalności nadających kwalifikacje</br>
+			  nauczycielskie i przygotowanie pedagogiczne lub słuchaczy legitymujących się</br>
+			  wyższym wykształceniem na poziomie studiów magisterskich nadających</br>
+			  kwalifikacje nauczycielskie i przygotowanie pedagogiczne, zgodnie z </br>
+			  Rozporządzeniem Ministra Edukacji Narodowej z dnia 1 sierpnia 2017 r. w sprawie</br>
+			  szczegółowych kwalifikacji wymaganych od nauczycieli <a href="" class="link">(Dz.U. 2017 poz. 1575).</a> 
+		  </p>
+          <p class="main-container__text-paragraph">
+			  Wymagane od kandydata:
+        <ul class="requirements-list">
+          <li class="requirements-list__item">Ukończone studia wyższe</p>
+          <li class="requirements-list__item">Przygotowanie pedagogiczne</p>
+        </ul>
+		  </p>
+        </div>
+        <div class="main-container__image"></div>
+      </div>
       <div class="main-container">
-		<div class="main-container__image"></div>
-		<div class="main-container__text"></div>
-	  </div>
+        <div class="main-container__image"></div>
+        <div class="main-container__text">
+          <h1 class="main-container__text-header">Po co?</h1>
+          <p class="main-container__text-paragraph">
+			  UW, wie co zrobić, by programy proponowanych kierunków studiów były jak</br>
+			  najbardziej atrakcyjne z biznesowego punktu widzenia. Do współpracy</br>
+			  zapraszamy przedsiębiorców, trenerów, doświadczonych praktyków. Dbamy o to,</br>
+			  żeby nasi studenci korzystali z doświadczenia i wiedzy osób, które odniosły w</br>
+			  życiu zawodowtm sukces. Dążymy do tego, by wybierając naszą uczelnie już w</br>
+			  trakcie studiów mieli kontakt z jak największą liczbą pracodawców i praktyków</br>
+			  biznesu ponieważ wiemy, że pomoże to im w zobyciu wielu potrzebnych </br>
+			  kwalifikacji oraz umiejętności, które zaprocentują w każdym miejscu pracy, a także</br>
+			  zainspiruje do poszerzania swoich kompetencji.
+		  </p>
+        </div>
+      </div>
       <div class="main-container">
-		<div class="main-container__text"></div>
-		<div class="main-container__image"></div>
-	  </div>
+        <div class="main-container__text">
+          <h1 class="main-container__text-header">Z kim?</h1>
+          <p class="main-container__text-paragraph">
+            Ciekawość jest najpotężniejszą cechą ludzką, która popycha do ciągłego</br>
+            rozwoju. CDV to miejsce, w którym studenci z zainteresowaniem i z</br>
+            przyjemnością zdobywają wiedzę. Zarówno studenci, absolwenci, jak i</br>
+            pracownicy to osoby nie tylko cieakwe świata, ale także pełne pasji w odkrywaniu</br>
+            nowych rzeczy i w pozytywny sposób wpływające na swoje otoczenie.
+          </p>
+          <p class="main-container__text-paragraph">
+            Nasze kierunki studiów są interesujące i innowacyjne, tworzone we współpracy z</br>
+            pracodawcami oraz na podstawie trendów w światowej gospodarce i kierunku</br>
+            zmian na dynamicznym rynku pracy. Nasi absolwenci znajdują pracę zgodną ze</br>
+            swoimi zainteresowaniami i wykształceniem.
+          </p>
+        </div>
+        <div class="main-container__image"></div>
+      </div>
     </main>
     <!-- Main Section End -->
 
     <!-- Form Section Start -->
     <div class="form-container">
+      <h3 class="form-header">Nie znalazłeś odpowiedniego kontaktu?</h3>
+      <p class="form-paragraph">Skorzystaj z formularza.</p>
       <form action="" method="" class="form">
-		<h3 class="form-header">Nie znalazłeś odpowiedniego kontaktu?</h3>
-		<p class="form-paragraph">Skorzystaj z formularza.</p>
         <div class="form-fullname">
           <input type="text" name="name" id="name" class="form-input" />
           <input type="text" name="surename" id="surename" class="form-input" />
@@ -58,21 +164,88 @@
         <input type="email" name="email" id="email" class="form-input" />
         <textarea name="message" id="message" cols="30" rows="10"></textarea>
         <div class="form-rodo">
-          <input type="checkbox" name="rodo" id="rodo" checked="checked" />
-		  <p class="form-rodo__text"></p>
+          <label class="form-rodo__label">
+            <input type="checkbox" name="rodo" id="rodo" class="form-rodo__label-checkbox" checked="checked"/>
+            <span class="form-rodo__label-checkmark"></span>
+          </label>
+          <p class="form-rodo__text">
+            Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie</br>
+            danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celachmarketingowych przez Collegium</br>
+            Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie </br>
+            żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia
+          </p>
         </div>
-		<input type="submit" value="WYŚLIJ">
+        <input type="submit" value="WYŚLIJ" class="form-submit" />
       </form>
     </div>
-	<!-- Form Section End -->
+    <!-- Form Section End -->
 
-	<!-- Footer Section Start-->
-	<footer class="footer">
-		<div class="footer-container">
-			<div class="footer-container-address"></div>
-			<div class="footer-container-sitemap"></div>
-		</div>
-	</footer>
-	<!-- Footer Section End-->
+    <!-- Footer Section Start-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-container-address">
+          <div class="footer-container-address__data">
+            <p>ul. Głogowska 10</p>
+            <p>61-719 Poznań</p>
+            <p>tel. 61 27 11 000</p>
+          </div>
+          <div class="footer-container-address__map">mapa</div>
+        </div>
+        <div class="footer-container-sitemap">
+          <div class="flex-correct">
+          <div class="footer-container-sitemap__column">
+            <p class="footer-container-sitemap__column-header">O nas</p>
+            <div class="footer-container-sitemap__column-menu">
+              <p class="column-menu__item">Dlaczego CDV</p>
+              <p class="column-menu__item">Kadra naukowa</p>
+              <p class="column-menu__item">Dla mediów</p>
+              <p class="column-menu__item">Kontakt</p>
+            </div>
+          </div>
+          <div class="footer-container-sitemap__column">
+            <p class="footer-container-sitemap__column-header">Dla kandydata</p>
+            <div class="footer-container-sitemap__column-menu">
+              <p class="column-menu__item">Poradnik maturzysty</p>
+              <p class="column-menu__item">Rekrutacja</p>
+              <p class="column-menu__item">Kredyt studencki</p>
+              <p class="column-menu__item">Studia dla cudzoziemców</p>
+            </div>
+          </div>
+          <div class="footer-container-sitemap__column">
+            <p class="footer-container-sitemap__column-header">Dla studenta</p>
+            <div class="footer-container-sitemap__column-menu">
+              <p class="column-menu__item">Wirtualna Uczelnia</p>
+              <p class="column-menu__item">Stypendia</p>
+              <p class="column-menu__item">Biuro Karier</p>
+              <p class="column-menu__item">Studiuj dalej</p>
+            </div>
+          </div>
+          <div class="footer-container-sitemap__column">
+            <p class="footer-container-sitemap__column-header">Dla biznesu</p>
+            <div class="footer-container-sitemap__column-menu">
+              <p class="column-menu__item">Współpraca z biznesem</p>
+              <p class="column-menu__item">EmotionsLAB</p>
+              <p class="column-menu__item">Wynajem sal</p>
+              <p class="column-menu__item">Znajdź pracownika</p>
+            </div>
+          </div>
+          <div class="footer-container-sitemap__column">
+              <p class="footer-container-sitemap__column-header">Na skróty</p>
+              <div class="footer-container-sitemap__column-menu">
+                <p class="column-menu__item">Aktualności</p>
+                <p class="column-menu__item">Wydarzenia</p>
+                <p class="column-menu__item">Konferencje</p>
+                <p class="column-menu__item">Blog</p>
+              </div>
+          </div>
+          </div>
+          <div class="footer-container-sitemap__author">
+            Projekt i realizacja: Crafton
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End-->
+    <script src="/dist/js/script.js"></script>
   </body>
 </html>
