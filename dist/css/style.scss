@@ -85,14 +85,13 @@ body {
 
 .absolute-header {
   position: absolute;
-  top: 60vh;
-  left: calc(100% - 75%);
-  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: 10%;
 }
 
 .slider-slide__header, .slider-slide__header-color {
-  font-family: 'Muli-light';
-  font-size: 2.2rem;
+  font-family: 'Muli-extralight';
+  font-size: 2.6rem;
   color: #fff;
 }
 
@@ -113,13 +112,24 @@ body {
 
 .transparent {
   background: none;
+  color: #fff;
 }
 
 .slider-arrows {
   position: absolute;
   top: 80vh;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  left: 10%;
+}
+
+.slider-arrows__arrow {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s color;
+}
+
+.slider-arrows__arrow:hover {
+  color: #ffcd19;
 }
 
 .dots-menu {
@@ -437,3 +447,5 @@ body {
   }
 
 } 
+
+/* TODO: RESPONSIVE NAVBAR, POPUP, MAP, PICTURES */

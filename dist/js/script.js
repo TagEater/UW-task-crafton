@@ -15,8 +15,8 @@ const showSlides = (num) =>
 	const slides = document.getElementsByClassName("slider-slide");
 	const controls = document.getElementsByClassName("dots-menu__item");
 
+	if(num >= slides.length) slideId = 0;
 	if(num < 0) slideId = slides.length;
-	if(num > slides.length) slideId = 1;
 
 	// remove class from all dots
 	for(i = 0; i < controls.length; i++)
@@ -49,3 +49,5 @@ const navbarHandler = () => {
 	if(window.pageYOffset >= navbarOffset + 1) navbar.classList.add("sticky");
 	else { navbar.classList.remove("sticky"); }
 }
+
+/* TODO: RESPONSIVE NAVABR HANDLER, POP-UP, GOOGLE MAP, MAIL HANDLER, FORM VALIDATOR */
